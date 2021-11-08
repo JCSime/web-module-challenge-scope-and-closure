@@ -28,11 +28,14 @@ console.log(processFirstItem(['foo','bar'],function(str){return str+str}));
   Study the code for counter1 and counter2, then answer the questions below.
   
   1. What is the difference between counter1 and counter2?
+    'Count' isn't a private value in counter2
   
   2. Which of the two uses a closure? How can you tell?
+    Counter1 uses closure because 'count' is defined within the function whereas Counter2 defines 'count' globally 
   
   3. In what scenario would the counter1 code be preferable? In what scenario would 
      counter2 be better?  
+     Counter1 is useful if you want to count multiple items using the same function. Counter2 is useful if you need to reference 'count' somewhere outside the function.
 */
 
 // counter1 code
@@ -62,9 +65,12 @@ Use the inning function below to do the following:
 NOTE: This will be a callback function for the tasks below
 */
 
-function inning(/*Code Here*/){
-    /*Code Here*/
+function inning(){
+    return Math.floor(Math.random() * 3);
 }
+console.log('task 2', inning());
+console.log('task 2', inning());
+console.log('task 2', inning());
 
 
 /* ⚾️⚾️⚾️ Task 3: finalScore() ⚾️⚾️⚾️
