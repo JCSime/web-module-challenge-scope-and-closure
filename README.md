@@ -61,6 +61,8 @@ You will be running your tests in one terminal and debugging in the other. As yo
 Edit the `ReadMe` file with your answers to the questions below.
 
 1. In your own words, define closure (1-2 sentences).
+  Closure is when you have functions inside of functions and the child functions have access to the parent function's information
+
 2. Study the following code, then answer the questions below.
 
 ```js
@@ -82,7 +84,10 @@ dansRoll();
 ```
 
 a. Where is closure used in this code? How can you tell?
+  In line 72 when we console.log 'name', that is an example of closure bacause 'name' isn't defined in the anonymous return function(line 72) yet we can still console.log it
+
 b. Compare and contrast calling `dansRoll` the first and second time. What is always the same? What could change?
+  
 c. What is the lexical scope of `newRoll`? 
 
 
